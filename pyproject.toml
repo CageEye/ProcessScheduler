@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "processscheduler-fork"
+version = "0.9.2"
+description = ""
+authors = ["Thomas Paviot <tpaviot@gmail.com>"]
+packages = [
+    { include = "processscheduler" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+z3-solver = "==4.11.2.0"
+kaleido = "0.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pypi-all"
+url = "https://repository.bluegrove.com/repository/pypi-all/simple/"
+default = true
